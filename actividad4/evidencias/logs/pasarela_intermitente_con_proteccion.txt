@@ -1,0 +1,24 @@
+[t= 0.00s] ===== ESCENARIO: pasarela_intermitente  |  CON proteccion =====
+[t= 0.20s] COMPRADOR: Iniciando transaccion y realizando pago
+[t= 0.20s] ESCROW: Procesando SOLICITUD_PAGO [903f6207]
+[t= 0.20s] ESCROW: estado CREADA -> INICIADA
+[t= 0.20s] PASARELA: (intento 1) ... sin respuesta
+[t= 1.70s] ESCROW: Procesando PLAZO_VENCIDO [9b525036]
+[t= 1.70s] ESCROW: pasarela sin respuesta. Reintento 2 en 0.5 s (backoff)
+[t= 2.20s] PASARELA: (intento 2) ... sin respuesta
+[t= 3.71s] ESCROW: Procesando PLAZO_VENCIDO [ad93aa68]
+[t= 3.71s] ESCROW: pasarela sin respuesta. Reintento 3 en 1.0 s (backoff)
+[t= 5.31s] PASARELA: Pago aprobado (intento 3)
+[t= 5.31s] ESCROW: Procesando PAGO_APROBADO [0d28d895]
+[t= 5.31s] ESCROW: estado INICIADA -> PAGO_RETENIDO  (en custodia $500,000)
+[t= 5.81s] VENDEDOR: Producto despachado
+[t= 5.81s] ESCROW: Procesando PRODUCTO_DESPACHADO [5429dd73]
+[t= 5.81s] ESCROW: estado PAGO_RETENIDO -> PRODUCTO_DESPACHADO
+[t= 6.21s] ESCROW: Procesando PLAZO_VENCIDO [63cbe523]
+[t= 6.21s] ESCROW: plazo obsoleto (la transaccion ya avanzo) -> ignorado
+[t= 7.11s] COMPRADOR: Producto recibido, confirmo la entrega
+[t= 7.11s] ESCROW: Procesando ENTREGA_CONFIRMADA [c3dcc250]
+[t= 7.11s] ESCROW: estado PRODUCTO_DESPACHADO -> ENTREGA_CONFIRMADA
+[t= 7.11s] ESCROW: estado ENTREGA_CONFIRMADA -> DINERO_LIBERADO  (el comprador confirmo la recepcion)
+[t= 7.11s] ESCROW: DINERO LIBERADO AL VENDEDOR $500,000
+[t= 7.45s] RESUMEN: estado=DINERO_LIBERADO  cobrado=$500,000  al vendedor=$500,000  reembolsado=$0  en custodia=$0  DLQ=0

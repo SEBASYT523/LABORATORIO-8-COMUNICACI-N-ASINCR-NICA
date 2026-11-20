@@ -1,0 +1,13 @@
+escenario,modo,estado_final,duracion_s,cobrado,pagado_vendedor,reembolsado,en_custodia,eventos_dlq,dinero_consistente
+normal,sin_proteccion,DINERO_LIBERADO,5.13,500000,500000,0,0,0,SI
+normal,con_proteccion,DINERO_LIBERADO,2.92,500000,500000,0,0,0,SI
+pasarela_caida,sin_proteccion,ENTREGA_CONFIRMADA (atascada),15.33,0,0,0,0,0,NO
+pasarela_caida,con_proteccion,CANCELADA,6.53,0,0,0,0,0,SI
+pasarela_intermitente,sin_proteccion,ENTREGA_CONFIRMADA (atascada),15.34,0,0,0,0,0,NO
+pasarela_intermitente,con_proteccion,DINERO_LIBERADO,7.45,500000,500000,0,0,0,SI
+vendedor_no_despacha,sin_proteccion,PAGO_RETENIDO (atascada),15.3,500000,0,0,500000,0,NO
+vendedor_no_despacha,con_proteccion,REEMBOLSADA,5.13,500000,0,500000,0,0,SI
+comprador_no_confirma,sin_proteccion,PRODUCTO_DESPACHADO (atascada),15.3,500000,0,0,500000,0,NO
+comprador_no_confirma,con_proteccion,DINERO_LIBERADO,5.64,500000,500000,0,0,0,SI
+evento_duplicado,sin_proteccion,ENTREGA_CONFIRMADA,5.14,1000000,500000,0,500000,0,NO
+evento_duplicado,con_proteccion,DINERO_LIBERADO,2.92,500000,500000,0,0,0,SI

@@ -1,0 +1,22 @@
+[t= 0.00s] ===== ESCENARIO: evento_duplicado  |  CON proteccion =====
+[t= 0.20s] COMPRADOR: Iniciando transaccion y realizando pago
+[t= 0.20s] ESCROW: Procesando SOLICITUD_PAGO [e3406b60]
+[t= 0.20s] ESCROW: estado CREADA -> INICIADA
+[t= 0.80s] PASARELA: Pago aprobado (intento 1)
+[t= 0.80s] ESCROW: Procesando PAGO_APROBADO [ec69f124]
+[t= 0.80s] ESCROW: estado INICIADA -> PAGO_RETENIDO  (en custodia $500,000)
+[t= 0.85s] RED: reenvia PAGO_APROBADO (mismo evento_id, entrega 'al menos una vez')
+[t= 0.85s] ESCROW: evento PAGO_APROBADO [ec69f124] DUPLICADO -> descartado
+[t= 1.30s] VENDEDOR: Producto despachado
+[t= 1.30s] ESCROW: Procesando PRODUCTO_DESPACHADO [16ebc1d1]
+[t= 1.30s] ESCROW: estado PAGO_RETENIDO -> PRODUCTO_DESPACHADO
+[t= 1.70s] ESCROW: Procesando PLAZO_VENCIDO [a01cb28b]
+[t= 1.70s] ESCROW: plazo obsoleto (la transaccion ya avanzo) -> ignorado
+[t= 2.61s] COMPRADOR: Producto recibido, confirmo la entrega
+[t= 2.61s] ESCROW: Procesando ENTREGA_CONFIRMADA [f0c39789]
+[t= 2.61s] ESCROW: estado PRODUCTO_DESPACHADO -> ENTREGA_CONFIRMADA
+[t= 2.61s] ESCROW: estado ENTREGA_CONFIRMADA -> DINERO_LIBERADO  (el comprador confirmo la recepcion)
+[t= 2.61s] ESCROW: DINERO LIBERADO AL VENDEDOR $500,000
+[t= 2.66s] RED: reenvia ENTREGA_CONFIRMADA (mismo evento_id)
+[t= 2.66s] ESCROW: evento ENTREGA_CONFIRMADA [f0c39789] DUPLICADO -> descartado
+[t= 2.92s] RESUMEN: estado=DINERO_LIBERADO  cobrado=$500,000  al vendedor=$500,000  reembolsado=$0  en custodia=$0  DLQ=0

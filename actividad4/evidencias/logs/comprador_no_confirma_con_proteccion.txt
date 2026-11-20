@@ -1,0 +1,21 @@
+[t= 0.00s] ===== ESCENARIO: comprador_no_confirma  |  CON proteccion =====
+[t= 0.20s] COMPRADOR: Iniciando transaccion y realizando pago
+[t= 0.20s] ESCROW: Procesando SOLICITUD_PAGO [9ef61816]
+[t= 0.20s] ESCROW: estado CREADA -> INICIADA
+[t= 0.80s] PASARELA: Pago aprobado (intento 1)
+[t= 0.80s] ESCROW: Procesando PAGO_APROBADO [71cdf2fb]
+[t= 0.80s] ESCROW: estado INICIADA -> PAGO_RETENIDO  (en custodia $500,000)
+[t= 1.30s] VENDEDOR: Producto despachado
+[t= 1.30s] ESCROW: Procesando PRODUCTO_DESPACHADO [7bb8ec95]
+[t= 1.30s] ESCROW: estado PAGO_RETENIDO -> PRODUCTO_DESPACHADO
+[t= 1.70s] ESCROW: Procesando PLAZO_VENCIDO [b7c8630a]
+[t= 1.70s] ESCROW: plazo obsoleto (la transaccion ya avanzo) -> ignorado
+[t= 2.61s] COMPRADOR: (recibio el producto pero NUNCA confirma)
+[t= 2.80s] ESCROW: Procesando PLAZO_VENCIDO [211ea7b3]
+[t= 2.80s] ESCROW: plazo obsoleto (la transaccion ya avanzo) -> ignorado
+[t= 3.31s] ESCROW: Procesando PLAZO_VENCIDO [efec0606]
+[t= 3.31s] ESCROW: RECORDATORIO al comprador: confirme la recepcion o abra una disputa
+[t= 5.31s] ESCROW: Procesando PLAZO_VENCIDO [2a6dfa8e]
+[t= 5.31s] ESCROW: estado PRODUCTO_DESPACHADO -> DINERO_LIBERADO  (aceptacion tacita: el comprador no confirmo ni abrio disputa en el plazo)
+[t= 5.31s] ESCROW: DINERO LIBERADO AL VENDEDOR $500,000
+[t= 5.64s] RESUMEN: estado=DINERO_LIBERADO  cobrado=$500,000  al vendedor=$500,000  reembolsado=$0  en custodia=$0  DLQ=0
