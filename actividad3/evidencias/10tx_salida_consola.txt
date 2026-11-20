@@ -1,0 +1,123 @@
+[15:45:49.885 | t= 0.000s] INICIANDO SISTEMA ESCROW con 10 transacciones simultaneas
+[15:45:49.967 | t= 0.082s] COMPRADOR-04: Iniciando transaccion ESCROW-004
+[15:45:49.967 | t= 0.083s] ESCROW: Procesando SOLICITUD_PAGO de ESCROW-004 (estuvo 0.1 ms en cola)
+[15:45:49.984 | t= 0.099s] COMPRADOR-05: Iniciando transaccion ESCROW-005
+[15:45:49.984 | t= 0.100s] ESCROW: Procesando SOLICITUD_PAGO de ESCROW-005 (estuvo 0.1 ms en cola)
+[15:45:50.201 | t= 0.316s] COMPRADOR-07: Iniciando transaccion ESCROW-007
+[15:45:50.201 | t= 0.316s] ESCROW: Procesando SOLICITUD_PAGO de ESCROW-007 (estuvo 0.0 ms en cola)
+[15:45:50.234 | t= 0.350s] COMPRADOR-08: Iniciando transaccion ESCROW-008
+[15:45:50.234 | t= 0.350s] ESCROW: Procesando SOLICITUD_PAGO de ESCROW-008 (estuvo 0.1 ms en cola)
+[15:45:50.243 | t= 0.358s] COMPRADOR-09: Iniciando transaccion ESCROW-009
+[15:45:50.243 | t= 0.358s] ESCROW: Procesando SOLICITUD_PAGO de ESCROW-009 (estuvo 0.0 ms en cola)
+[15:45:50.327 | t= 0.443s] COMPRADOR-03: Iniciando transaccion ESCROW-003
+[15:45:50.327 | t= 0.443s] ESCROW: Procesando SOLICITUD_PAGO de ESCROW-003 (estuvo 0.1 ms en cola)
+[15:45:50.377 | t= 0.492s] COMPRADOR-02: Iniciando transaccion ESCROW-002
+[15:45:50.377 | t= 0.492s] ESCROW: Procesando SOLICITUD_PAGO de ESCROW-002 (estuvo 0.0 ms en cola)
+[15:45:50.391 | t= 0.506s] PASARELA: Pago aprobado (ESCROW-003)
+[15:45:50.391 | t= 0.507s] ESCROW: Procesando PAGO_APROBADO de ESCROW-003 (estuvo 0.0 ms en cola)
+[15:45:50.391 | t= 0.507s] ESCROW: Dinero de ESCROW-003 retenido en garantia ($2,620,000)
+[15:45:50.404 | t= 0.519s] PASARELA: Pago aprobado (ESCROW-005)
+[15:45:50.404 | t= 0.519s] ESCROW: Procesando PAGO_APROBADO de ESCROW-005 (estuvo 0.0 ms en cola)
+[15:45:50.404 | t= 0.519s] ESCROW: Dinero de ESCROW-005 retenido en garantia ($570,000)
+[15:45:50.632 | t= 0.748s] COMPRADOR-10: Iniciando transaccion ESCROW-010
+[15:45:50.632 | t= 0.748s] ESCROW: Procesando SOLICITUD_PAGO de ESCROW-010 (estuvo 0.0 ms en cola)
+[15:45:50.729 | t= 0.844s] COMPRADOR-01: Iniciando transaccion ESCROW-001
+[15:45:50.729 | t= 0.844s] ESCROW: Procesando SOLICITUD_PAGO de ESCROW-001 (estuvo 0.0 ms en cola)
+[15:45:50.777 | t= 0.893s] COMPRADOR-06: Iniciando transaccion ESCROW-006
+[15:45:50.777 | t= 0.893s] ESCROW: Procesando SOLICITUD_PAGO de ESCROW-006 (estuvo 0.1 ms en cola)
+[15:45:50.812 | t= 0.927s] VENDEDOR-05: Preparando despacho (ESCROW-005)
+[15:45:50.812 | t= 0.927s] ESCROW: Procesando PRODUCTO_DESPACHADO de ESCROW-005 (estuvo 0.1 ms en cola)
+[15:45:50.817 | t= 0.933s] PASARELA: Pago aprobado (ESCROW-004)
+[15:45:50.817 | t= 0.933s] ESCROW: Procesando PAGO_APROBADO de ESCROW-004 (estuvo 0.0 ms en cola)
+[15:45:50.817 | t= 0.933s] ESCROW: Dinero de ESCROW-004 retenido en garantia ($2,670,000)
+[15:45:50.951 | t= 1.066s] PASARELA: Pago aprobado (ESCROW-009)
+[15:45:50.951 | t= 1.066s] ESCROW: Procesando PAGO_APROBADO de ESCROW-009 (estuvo 0.0 ms en cola)
+[15:45:50.951 | t= 1.066s] ESCROW: Dinero de ESCROW-009 retenido en garantia ($2,980,000)
+[15:45:50.982 | t= 1.098s] PASARELA: Pago aprobado (ESCROW-007)
+[15:45:50.982 | t= 1.098s] ESCROW: Procesando PAGO_APROBADO de ESCROW-007 (estuvo 0.0 ms en cola)
+[15:45:50.982 | t= 1.098s] ESCROW: Dinero de ESCROW-007 retenido en garantia ($2,890,000)
+[15:45:51.122 | t= 1.237s] PASARELA: Pago aprobado (ESCROW-006)
+[15:45:51.122 | t= 1.237s] ESCROW: Procesando PAGO_APROBADO de ESCROW-006 (estuvo 0.1 ms en cola)
+[15:45:51.122 | t= 1.237s] ESCROW: Dinero de ESCROW-006 retenido en garantia ($1,190,000)
+[15:45:51.343 | t= 1.458s] PASARELA: Pago aprobado (ESCROW-010)
+[15:45:51.343 | t= 1.458s] ESCROW: Procesando PAGO_APROBADO de ESCROW-010 (estuvo 0.0 ms en cola)
+[15:45:51.343 | t= 1.458s] ESCROW: Dinero de ESCROW-010 retenido en garantia ($2,850,000)
+[15:45:51.421 | t= 1.537s] VENDEDOR-09: Preparando despacho (ESCROW-009)
+[15:45:51.421 | t= 1.537s] ESCROW: Procesando PRODUCTO_DESPACHADO de ESCROW-009 (estuvo 0.1 ms en cola)
+[15:45:51.463 | t= 1.578s] VENDEDOR-04: Preparando despacho (ESCROW-004)
+[15:45:51.463 | t= 1.578s] ESCROW: Procesando PRODUCTO_DESPACHADO de ESCROW-004 (estuvo 0.1 ms en cola)
+[15:45:51.545 | t= 1.661s] PASARELA: Pago aprobado (ESCROW-002)
+[15:45:51.545 | t= 1.661s] ESCROW: Procesando PAGO_APROBADO de ESCROW-002 (estuvo 0.0 ms en cola)
+[15:45:51.545 | t= 1.661s] ESCROW: Dinero de ESCROW-002 retenido en garantia ($1,680,000)
+[15:45:51.551 | t= 1.666s] PASARELA: Pago aprobado (ESCROW-001)
+[15:45:51.551 | t= 1.666s] ESCROW: Procesando PAGO_APROBADO de ESCROW-001 (estuvo 0.0 ms en cola)
+[15:45:51.551 | t= 1.666s] ESCROW: Dinero de ESCROW-001 retenido en garantia ($650,000)
+[15:45:51.561 | t= 1.677s] VENDEDOR-03: Preparando despacho (ESCROW-003)
+[15:45:51.561 | t= 1.677s] ESCROW: Procesando PRODUCTO_DESPACHADO de ESCROW-003 (estuvo 0.1 ms en cola)
+[15:45:51.885 | t= 2.001s] PASARELA: Pago aprobado (ESCROW-008)
+[15:45:51.885 | t= 2.001s] ESCROW: Procesando PAGO_APROBADO de ESCROW-008 (estuvo 0.0 ms en cola)
+[15:45:51.885 | t= 2.001s] ESCROW: Dinero de ESCROW-008 retenido en garantia ($2,200,000)
+[15:45:51.961 | t= 2.076s] VENDEDOR-01: Preparando despacho (ESCROW-001)
+[15:45:51.961 | t= 2.076s] ESCROW: Procesando PRODUCTO_DESPACHADO de ESCROW-001 (estuvo 0.1 ms en cola)
+[15:45:52.015 | t= 2.130s] VENDEDOR-10: Preparando despacho (ESCROW-010)
+[15:45:52.015 | t= 2.130s] ESCROW: Procesando PRODUCTO_DESPACHADO de ESCROW-010 (estuvo 0.1 ms en cola)
+[15:45:52.057 | t= 2.173s] VENDEDOR-07: Preparando despacho (ESCROW-007)
+[15:45:52.057 | t= 2.173s] ESCROW: Procesando PRODUCTO_DESPACHADO de ESCROW-007 (estuvo 0.1 ms en cola)
+[15:45:52.282 | t= 2.398s] VENDEDOR-06: Preparando despacho (ESCROW-006)
+[15:45:52.282 | t= 2.398s] ESCROW: Procesando PRODUCTO_DESPACHADO de ESCROW-006 (estuvo 0.1 ms en cola)
+[15:45:52.400 | t= 2.515s] VENDEDOR-02: Preparando despacho (ESCROW-002)
+[15:45:52.400 | t= 2.515s] ESCROW: Procesando PRODUCTO_DESPACHADO de ESCROW-002 (estuvo 0.1 ms en cola)
+[15:45:52.852 | t= 2.967s] VENDEDOR-08: Preparando despacho (ESCROW-008)
+[15:45:52.852 | t= 2.968s] ESCROW: Procesando PRODUCTO_DESPACHADO de ESCROW-008 (estuvo 0.1 ms en cola)
+[15:45:53.400 | t= 3.515s] COMPRADOR-04: Producto recibido (ESCROW-004)
+[15:45:53.400 | t= 3.516s] ESCROW: Procesando ENTREGA_CONFIRMADA de ESCROW-004 (estuvo 0.0 ms en cola)
+[15:45:53.400 | t= 3.516s] ESCROW: DINERO LIBERADO AL VENDEDOR-04 -> $2,670,000 (ESCROW-004)
+[15:45:53.448 | t= 3.563s] COMPRADOR-05: Producto recibido (ESCROW-005)
+[15:45:53.448 | t= 3.563s] ESCROW: Procesando ENTREGA_CONFIRMADA de ESCROW-005 (estuvo 0.0 ms en cola)
+[15:45:53.448 | t= 3.563s] ESCROW: DINERO LIBERADO AL VENDEDOR-05 -> $570,000 (ESCROW-005)
+[15:45:54.089 | t= 4.204s] COMPRADOR-10: Producto recibido (ESCROW-010)
+[15:45:54.089 | t= 4.204s] ESCROW: Procesando ENTREGA_CONFIRMADA de ESCROW-010 (estuvo 0.0 ms en cola)
+[15:45:54.089 | t= 4.204s] ESCROW: DINERO LIBERADO AL VENDEDOR-10 -> $2,850,000 (ESCROW-010)
+[15:45:54.267 | t= 4.382s] COMPRADOR-03: Producto recibido (ESCROW-003)
+[15:45:54.267 | t= 4.382s] ESCROW: Procesando ENTREGA_CONFIRMADA de ESCROW-003 (estuvo 0.0 ms en cola)
+[15:45:54.267 | t= 4.382s] ESCROW: DINERO LIBERADO AL VENDEDOR-03 -> $2,620,000 (ESCROW-003)
+[15:45:54.672 | t= 4.787s] COMPRADOR-09: Producto recibido (ESCROW-009)
+[15:45:54.672 | t= 4.787s] ESCROW: Procesando ENTREGA_CONFIRMADA de ESCROW-009 (estuvo 0.1 ms en cola)
+[15:45:54.672 | t= 4.787s] ESCROW: DINERO LIBERADO AL VENDEDOR-09 -> $2,980,000 (ESCROW-009)
+[15:45:54.711 | t= 4.826s] COMPRADOR-07: Producto recibido (ESCROW-007)
+[15:45:54.711 | t= 4.826s] ESCROW: Procesando ENTREGA_CONFIRMADA de ESCROW-007 (estuvo 0.0 ms en cola)
+[15:45:54.711 | t= 4.826s] ESCROW: DINERO LIBERADO AL VENDEDOR-07 -> $2,890,000 (ESCROW-007)
+[15:45:54.746 | t= 4.861s] COMPRADOR-02: Producto recibido (ESCROW-002)
+[15:45:54.746 | t= 4.861s] ESCROW: Procesando ENTREGA_CONFIRMADA de ESCROW-002 (estuvo 0.0 ms en cola)
+[15:45:54.746 | t= 4.861s] ESCROW: DINERO LIBERADO AL VENDEDOR-02 -> $1,680,000 (ESCROW-002)
+[15:45:54.960 | t= 5.075s] COMPRADOR-01: Producto recibido (ESCROW-001)
+[15:45:54.960 | t= 5.075s] ESCROW: Procesando ENTREGA_CONFIRMADA de ESCROW-001 (estuvo 0.0 ms en cola)
+[15:45:54.960 | t= 5.075s] ESCROW: DINERO LIBERADO AL VENDEDOR-01 -> $650,000 (ESCROW-001)
+[15:45:55.360 | t= 5.476s] COMPRADOR-06: Producto recibido (ESCROW-006)
+[15:45:55.361 | t= 5.476s] ESCROW: Procesando ENTREGA_CONFIRMADA de ESCROW-006 (estuvo 0.1 ms en cola)
+[15:45:55.361 | t= 5.476s] ESCROW: DINERO LIBERADO AL VENDEDOR-06 -> $1,190,000 (ESCROW-006)
+[15:45:56.074 | t= 6.189s] COMPRADOR-08: Producto recibido (ESCROW-008)
+[15:45:56.074 | t= 6.189s] ESCROW: Procesando ENTREGA_CONFIRMADA de ESCROW-008 (estuvo 0.0 ms en cola)
+[15:45:56.074 | t= 6.189s] ESCROW: DINERO LIBERADO AL VENDEDOR-08 -> $2,200,000 (ESCROW-008)
+
+RESUMEN DE LAS TRANSACCIONES
+ID         Comprador      Vendedor             Valor  Estado final     Duracion (s)
+ESCROW-001 COMPRADOR-01   VENDEDOR-01        650,000  DINERO_LIBERADO          4.23
+ESCROW-002 COMPRADOR-02   VENDEDOR-02      1,680,000  DINERO_LIBERADO          4.37
+ESCROW-003 COMPRADOR-03   VENDEDOR-03      2,620,000  DINERO_LIBERADO          3.94
+ESCROW-004 COMPRADOR-04   VENDEDOR-04      2,670,000  DINERO_LIBERADO          3.43
+ESCROW-005 COMPRADOR-05   VENDEDOR-05        570,000  DINERO_LIBERADO          3.46
+ESCROW-006 COMPRADOR-06   VENDEDOR-06      1,190,000  DINERO_LIBERADO          4.58
+ESCROW-007 COMPRADOR-07   VENDEDOR-07      2,890,000  DINERO_LIBERADO          4.51
+ESCROW-008 COMPRADOR-08   VENDEDOR-08      2,200,000  DINERO_LIBERADO          5.84
+ESCROW-009 COMPRADOR-09   VENDEDOR-09      2,980,000  DINERO_LIBERADO          4.43
+ESCROW-010 COMPRADOR-10   VENDEDOR-10      2,850,000  DINERO_LIBERADO          3.46
+
+Transacciones completadas : 10/10
+Dinero liberado total     : $20,300,000
+Duracion total simulacion : 6.19 s
+Eventos procesados        : 40
+Consumidores ESCROW       : 1  (costo por evento 0 ms)
+Espera en cola  prom/max  : 0.05 ms / 0.11 ms
+
+Evidencias guardadas en evidencias/10tx_bitacora.csv y evidencias/10tx_transacciones.csv
