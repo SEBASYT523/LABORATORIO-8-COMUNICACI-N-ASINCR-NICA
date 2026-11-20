@@ -1,0 +1,27 @@
+# Infraestructura local de la Actividad 5.
+#   RabbitMQ:   AMQP en localhost:5672, consola web en http://localhost:15672 (guest / guest)
+#   PostgreSQL: localhost:5432 (usuario escrow / clave escrow / base escrow)
+# Si usan Neon, no necesitan el servicio "postgres": basta con definir DATABASE_URL.
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbit
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    volumes:
+      - rabbit_data:/var/lib/rabbitmq   # los mensajes persistentes sobreviven a reinicios
+  postgres:
+    image: postgres:16
+    container_name: pg
+    environment:
+      POSTGRES_USER: escrow
+      POSTGRES_PASSWORD: escrow
+      POSTGRES_DB: escrow
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+volumes:
+  rabbit_data:
+  pg_data:
